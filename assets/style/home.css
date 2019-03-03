@@ -1,0 +1,9 @@
+.main {
+  background-color: #141414;
+}
+.home-image {
+  background: url(../images/img-homepage.png) no-repeat center top;
+  height: 1080px;
+  width: auto;
+  position: relative;
+}
