@@ -1,9 +1,166 @@
-.main {
-  background-color: #141414;
+body.main {
+  background-color: #141414 !important;
 }
 .home-image {
   background: url(../images/img-homepage.png) no-repeat center top;
   height: 1080px;
-  width: auto;
   position: relative;
+  padding: 50px !important;
+  width: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.home-image .border-top-left {
+    position: absolute;
+    border-bottom: 5px solid white;
+    width: 35%;
+    left: 50px;
+    top: 50px;
+}
+.home-image .border-top-right {
+    position: absolute;
+    border-bottom: 5px solid white;
+    width: 35%;
+    right: 50px;
+    top: 50px;
+}
+.home-image .border-bottom-left {
+    position: absolute;
+    border-bottom: 5px solid white;
+    width: 44%;
+    left: 50px;
+    bottom: 50px;
+}
+.home-image .border-bottom-right {
+    position: absolute;
+    border-bottom: 5px solid white;
+    width: 44%;
+    right: 50px;
+    bottom: 50px;
+}
+.home-container {
+    height: 100%;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-container .first {
+    font-size: 45px;
+    font-weight: 300;
+    color: white;
+}
+.home-container .second {
+    font-size: 120px;
+    font-weight: bold;
+    color: #fe4315;
+}
+.home-container .second span.o-slash{
+    position: relative;
+    color: white;
+}
+.home-container .second span.o-slash span{
+    position: absolute;
+    font-weight: 200;
+    color: white;
+    left: 32px;
+}
+.home-container .third {
+    font-size: 45px;
+    font-weight: 300;
+    color: white;
+}
+.home-container .account {
+    margin: 5px;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border: 2px solid #fe4315;
+}
+.home-container .donate {
+    margin: 5px;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border: 2px solid white;
+}
+.number {
+    font-size: 110px;
+    padding: 0px 20px;
+    width: fit-content;
+    background-color: #fe4315;
+    color: #141414;
+}
+.project {
+    display: flex;
+    padding-top: 140px;
+    padding-bottom: 120px;
+}
+.project .project-body {
+    padding: 0px 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project .project-body .title {
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+.project .project-body .project-content {
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+.category {
+    display: flex;
+}
+.category .left-content {
+    padding-top: 100px;
+    width: 40%;
+}
+.category .left-content .left-content-header {
+    display: flex;
+    justify-content: flex-end;
+}
+.category .left-content .left-content-inventory {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+}
+.category .left-content .left-content-inventory .inventory-start-date{
+    font-size: 40px;
+    line-height: 1;
+}
+.category .left-content .left-content-inventory .inventory-count{
+    font-size: 140px;
+    line-height: 1;
+}
+.category .left-content .left-content-inventory .inventory-books{
+    font-size: 40px;
+    line-height: 1.3;
+}
+.category .right-content  {
+    padding: 80px;
+    width: 60%;
+}
+.category .right-content .title {
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+.parteners .parteners-header {
+    display: flex;
+}
+.parteners .parteners-header .parteners-header-content {
+    width: 60%;
+}
+.parteners .parteners-header .parteners-special {
+    width: 40%;
 }
