@@ -1,0 +1,79 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+    text-decoration: none;
+    color: #fe4315;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .account {
+    margin: 5px;
+    font-size: 24px;
+    padding: 10px;
+    color: black;
+    width: fit-content;
+    border: 2px solid #fe4315;
+}
+.sidenav .donate {
+    margin: 5px;
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    width: fit-content;
+    border: 2px solid  #fe4315;;
+}
+
+.search-div {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-div .title {
+    color: white;
+    font-size: 40px;
+    padding: 5px 30px;
+}
+.search-div .custom-select {
+    width: fit-content;
+    background-color: black;
+    color: white;
+}
+
+/* book card style */
+.book-cover {}
+.book-title {}
+.book-author {}
+.book-publishing-house {}
+.book-decsription {}
+.book-reserve {}

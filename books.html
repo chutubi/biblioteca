@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="./assets/logo/H.png">
+    <link href="assets/style/home.css" rel="stylesheet">
+    <link href="assets/style/books.css" rel="stylesheet">
+    <title>HISTORIA RIDIVA</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="main">
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/logo/logo-header.png" width="auto" height="50" class="d-inline-block align-top img-fluid" alt="">
+        </a>
+    
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </button>
+    </nav>
+    <div id="SidenavRight" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="text-uppercase" href="#">prima pagină</a>
+      <a class="text-uppercase" href="#">despre proiect</a>
+      <a class="text-uppercase" href="#">biblioteca</a>
+      <a class="text-uppercase" href="#">parteneri</a>
+      <a class="text-uppercase" href="#">unde ne găsești</a>
+      <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="text-uppercase account">
+              fă-ți cont
+          </div>
+          <div class="text-uppercase donate">
+              Donează o carte
+          </div>
+          
+      </div>
+    </div>
+    <div class="search-div">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="title">
+                Cărti
+            </div>
+            <select class="custom-select">
+                <option selected>Antichitate</option>
+                <option value="1">epoca medie</option>
+                <option value="2">epoca modernă</option>
+                <option value="3">epoca contemporană</option>
+                <option value="3">reviste</option>
+                <option value="3">publicații vechi</option>
+            </select>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="px-3">
+                <img class="img-fluid" src="./assets/logo/search-icon.png" alt="" >
+            </div>
+            <div class="">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="img-fluid" src="./assets/logo/img-acount.png" alt="" >
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Datele mele</a>
+                    <a class="dropdown-item" href="#">Cărti rezervate</a>
+                    <a class="dropdown-item" href="#">Iesi din cont</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="book-editor">
+        
+    </div>
+    <div class="container">
+        <div class="book-list row pa-3">
+            <div class="col-md-3 pa-3">
+                <div class="row">
+                    <div class="col-6 book-cover">
+                        <img class="img-fluid" src="./assets/logo/coperta-carte.png" alt="" height="300px" width="180px">
+                    </div>
+                    <div class="col-6">
+                        <div class="book-title">
+                            Arhitectul G.M. Cantacuzino în dosarele Securității
+                        </div>
+                        <div class="book-author">
+                            Vlad Mitric-Ciupe
+                        </div>
+                        <div class="book-publishing-house">
+                            Humanitas
+                        </div>
+                        <div class="book-decsription">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                        </div>
+                        <div class="book-reserve">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- script for right menu side bar -->
+    <script>
+        function openNav() {
+            console.log("woks open");
+            document.getElementById("SidenavRight").style.width = "480px";
+            document.body.style.backgroundColor = "red";
+        }
+        
+        function closeNav() {
+            document.getElementById("SidenavRight").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
