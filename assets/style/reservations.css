@@ -1,0 +1,55 @@
+.account {
+    color: white;
+}
+.account .my-data {
+    font-size: 24px;
+    color: white;
+}
+.card-input input{
+    color: white;
+    border-color: white;
+    background-color:  #141414;
+}
+.card-input input.form-control {
+    color: white;
+    background-color: #141414;
+    border-color: white;
+    outline: 0;
+    box-shadow: none;
+}
+.account .save {
+    padding: 5px 30px;
+    font-size: 20px;
+    background-color:  #fe4315;
+}
+.account hr {
+    margin-right: -15px;
+    margin-left: -15px;
+    border: 1px solid #d3d3d3;
+}
+
+.card-reservations {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+.card-reservations .item:not(:last-child) {
+    position: relative;
+}
+.card-reservations .item:last-child {
+    color:  #fe4315;
+}
+
+.card-reservations .item:not(:last-child)::after {
+    content: '\22EE';
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    color:white;
+}
+.card-reservations.past {
+    opacity: 0.5;
+}
+.card-reservations.past .item:last-child {
+    color: white;
+}

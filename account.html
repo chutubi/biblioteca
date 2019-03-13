@@ -6,6 +6,7 @@
     <link rel="icon" href="./assets/logo/H.png">
     <link href="assets/style/home.css" rel="stylesheet">
     <link href="assets/style/books.css" rel="stylesheet">
+    <link href="assets/style/account.css" rel="stylesheet">
     <title>HISTORIA RIDIVA</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,16 +43,9 @@
     <div class="search-div">
         <div class="d-flex align-items-center justify-content-center">
             <div class="title">
-                Cărti
+                Contul meu
             </div>
-            <select class="custom-select">
-                <option selected>Antichitate</option>
-                <option value="1">epoca medie</option>
-                <option value="2">epoca modernă</option>
-                <option value="3">epoca contemporană</option>
-                <option value="3">reviste</option>
-                <option value="3">publicații vechi</option>
-            </select>
+            
         </div>
         <div class="d-flex align-items-center justify-content-center">
             <div class="px-3">
@@ -69,74 +63,104 @@
             </div>
         </div>
     </div>
-    <div class="book-editor">
+    <div class="container-fluid account">
+        <div class="my-data p-3">
+            Datele mele
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Nume
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Numele dvs." aria-label="last_name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Prenume
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Prenumele dvs." aria-label="first_name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Email
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ex: abcde@example.com" aria-label="email" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Telefon
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ex: 0712345678" aria-label="name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-    </div>
-    <div class="container-fluid">
-        <div class="book-list row p-3">
-            <div class="col-md-3 ">
-                <div class="row">
-                    <div class="col-6 book-cover">
-                        <img class="" src="./assets/logo/coperta-carte.png" alt="" height="300px" width="180px">
-                    </div>
-                    <div class="col-6 book-info">
-                        <div class="book-title">
-                            Arhitectul G.M. Cantacuzino în dosarele Securității
+        <div class="d-flex justify-content-center p-3">
+            <div class="save">
+                Salveaza
+            </div>
+        </div>
+        <hr>
+        <div class="my-data p-3">
+            Schimba parola
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Parola veche
                         </div>
-                        <div class="book-author">
-                            Vlad Mitric-Ciupe
-                        </div>
-                        <div class="book-pages">
-                            480 pagini
-                        </div>
-                        <div class="book-publishing-house">
-                            <a href="#">Humanitas</a>
-                        </div>
-                        <div class="book-decsription">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                        </div>
-                        <div class="book-reserve">
-                            <a href="#">Rezervă</a>
+                        <div class="input-group">
+                            <input type="password" class="form-control" placeholder="*******" aria-label="old_password" aria-describedby="basic-addon1">
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-md-3 d-flex">
-                <div class="reserve-card">
-                    <div class="book-title my-3 mx-5">
-                        Arhitectul G.M. Cantacuzino în dosarele Securității
-                    </div>
-                    <div class="reserve-date m-3 px-5 py-1">
-                        Selectează data
-                    </div>
-                    <div class="book-reserve px-3 m-3">
-                        <a class="px-3" href="#">Rezervă</a>
+                <div class="col-md-4">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Parola noua
+                        </div>
+                        <div class="input-group">
+                            <input type="password" class="form-control" placeholder="*******" aria-label="new_password" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-md-3 d-flex">
-                <div class="reserve-card">
-                    
-                    <div class="book-title my-3 mx-5">
-                        <div class="">
-                            Cartea
+                <div class="col-md-4">
+                    <div class=" card-input">
+                        <div class="py-2">
+                            Reintrodu parola noua
                         </div>
-                        <div class="">
-                            Arhitectul G.M. Cantacuzino în dosarele Securității
-                        </div>
-                        <div class="">
-                            a fost rezervata pentru data 15.03.2019
+                        <div class="input-group">
+                            <input type="password" class="form-control" placeholder="*******" aria-label="new_password" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="m-3 px-5 py-1">
-                        Poti vedea cartile rezervcate in <a href="#">Contul tau</a>
-                    </div>
-                    
                 </div>
+                
             </div>
-            
+        </div>
+        
+        <div class="d-flex justify-content-center p-3">
+            <div class="save">
+                Salveaza
+            </div>
         </div>
     </div>
     <!-- script for right menu side bar -->

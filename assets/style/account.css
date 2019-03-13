@@ -1,0 +1,29 @@
+.account {
+    color: white;
+}
+.account .my-data {
+    font-size: 24px;
+    color: white;
+}
+.card-input input{
+    color: white;
+    border-color: white;
+    background-color:  #141414;
+}
+.card-input input.form-control {
+    color: white;
+    background-color: #141414;
+    border-color: white;
+    outline: 0;
+    box-shadow: none;
+}
+.account .save {
+    padding: 5px 30px;
+    font-size: 20px;
+    background-color:  #fe4315;
+}
+.account hr {
+    margin-right: -15px;
+    margin-left: -15px;
+    border: 1px solid #d3d3d3;
+}

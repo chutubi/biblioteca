@@ -6,6 +6,7 @@
     <link rel="icon" href="./assets/logo/H.png">
     <link href="assets/style/home.css" rel="stylesheet">
     <link href="assets/style/books.css" rel="stylesheet">
+    <link href="assets/style/reservations.css" rel="stylesheet">
     <title>HISTORIA RIDIVA</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,16 +43,9 @@
     <div class="search-div">
         <div class="d-flex align-items-center justify-content-center">
             <div class="title">
-                Cărti
+                Rezervarile mele
             </div>
-            <select class="custom-select">
-                <option selected>Antichitate</option>
-                <option value="1">epoca medie</option>
-                <option value="2">epoca modernă</option>
-                <option value="3">epoca contemporană</option>
-                <option value="3">reviste</option>
-                <option value="3">publicații vechi</option>
-            </select>
+            
         </div>
         <div class="d-flex align-items-center justify-content-center">
             <div class="px-3">
@@ -69,74 +63,89 @@
             </div>
         </div>
     </div>
-    <div class="book-editor">
+    <div class="container-fluid account">
+        <div class="my-data p-3">
+            Urmatoarele rezervari
+        </div>
+        <div class="container-fluid">
+            <div class="row mx-0 my-2 card-reservations">
+                <div class="col-1 item">
+                    15-03-2019
+                </div>
+                <div class="col-5 item">
+                    Arhitectul G.M. Cantacuzino în dosarele Securității
+                </div>
+                <div class="col-3 item">
+                    Vlad Mitric-Ciupe
+                </div>
+                <div class="col-2 item">
+                    Sector A - Randul 12
+                </div>
+                <div class="col-1 item">
+                    Anuleaza
+                    <span class="mx-1">&#x1F5D1;</span>
+                </div>
+            </div>
+            <div class="row mx-0 my-2 card-reservations">
+                <div class="col-1 item">
+                    15-03-2019
+                </div>
+                <div class="col-5 item">
+                    Arhitectul G.M. Cantacuzino în dosarele Securității
+                </div>
+                <div class="col-3 item">
+                    Vlad Mitric-Ciupe
+                </div>
+                <div class="col-2 item">
+                    Sector A - Randul 12
+                </div>
+                <div class="col-1 item">
+                    Anuleaza
+                    <span class="mx-1">&#128465;</span>
+                </div>
+            </div>
+        </div>
         
-    </div>
-    <div class="container-fluid">
-        <div class="book-list row p-3">
-            <div class="col-md-3 ">
-                <div class="row">
-                    <div class="col-6 book-cover">
-                        <img class="" src="./assets/logo/coperta-carte.png" alt="" height="300px" width="180px">
-                    </div>
-                    <div class="col-6 book-info">
-                        <div class="book-title">
-                            Arhitectul G.M. Cantacuzino în dosarele Securității
-                        </div>
-                        <div class="book-author">
-                            Vlad Mitric-Ciupe
-                        </div>
-                        <div class="book-pages">
-                            480 pagini
-                        </div>
-                        <div class="book-publishing-house">
-                            <a href="#">Humanitas</a>
-                        </div>
-                        <div class="book-decsription">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                        </div>
-                        <div class="book-reserve">
-                            <a href="#">Rezervă</a>
-                        </div>
-                    </div>
+        <div class="my-data p-3">
+            Rezervari finalizate
+        </div>
+        <div class="container-fluid">
+            <div class="row mx-0 my-2 card-reservations past">
+                <div class="col-1 item">
+                    15-03-2019
+                </div>
+                <div class="col-5 item">
+                    Arhitectul G.M. Cantacuzino în dosarele Securității
+                </div>
+                <div class="col-3 item">
+                    Vlad Mitric-Ciupe
+                </div>
+                <div class="col-2 item">
+                    Sector A - Randul 12
+                </div>
+                <div class="col-1 item">
+                    Finalizata
+                    <span class="mx-1">&#10003;</span>
                 </div>
             </div>
-            
-            <div class="col-md-3 d-flex">
-                <div class="reserve-card">
-                    <div class="book-title my-3 mx-5">
-                        Arhitectul G.M. Cantacuzino în dosarele Securității
-                    </div>
-                    <div class="reserve-date m-3 px-5 py-1">
-                        Selectează data
-                    </div>
-                    <div class="book-reserve px-3 m-3">
-                        <a class="px-3" href="#">Rezervă</a>
-                    </div>
+            <div class="row mx-0 my-2 card-reservations past">
+                <div class="col-1 item">
+                    15-03-2019
+                </div>
+                <div class="col-5 item">
+                    Arhitectul G.M. Cantacuzino în dosarele Securității
+                </div>
+                <div class="col-3 item">
+                    Vlad Mitric-Ciupe
+                </div>
+                <div class="col-2 item">
+                    Sector A - Randul 12
+                </div>
+                <div class="col-1 item">
+                    Anulata
+                    <span class="mx-1">&#10007;</span>
                 </div>
             </div>
-            
-            <div class="col-md-3 d-flex">
-                <div class="reserve-card">
-                    
-                    <div class="book-title my-3 mx-5">
-                        <div class="">
-                            Cartea
-                        </div>
-                        <div class="">
-                            Arhitectul G.M. Cantacuzino în dosarele Securității
-                        </div>
-                        <div class="">
-                            a fost rezervata pentru data 15.03.2019
-                        </div>
-                    </div>
-                    <div class="m-3 px-5 py-1">
-                        Poti vedea cartile rezervcate in <a href="#">Contul tau</a>
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </div>
     <!-- script for right menu side bar -->
