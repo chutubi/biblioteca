@@ -47,7 +47,7 @@
     color: black;
     padding: 10px;
     width: fit-content;
-    border: 2px solid  #fe4315;;
+    border: 2px solid  #fe4315;
 }
 
 .search-div {
@@ -72,8 +72,68 @@
 
 /* book card style */
 .book-cover {}
-.book-title {}
-.book-author {}
-.book-publishing-house {}
-.book-decsription {}
-.book-reserve {}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.book-title {
+    font-size: 16px;
+    color: #d3d3d3;
+}
+.book-author {
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.book-pages {
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.book-publishing-house a {
+    font-size: 14px;
+    color:  #fe4315;
+}
+.book-publishing-house a:hover {
+    color:  #fe4315;
+}
+.book-decsription {
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.book-reserve {
+    padding: 5px;
+    text-align: center;
+    background-color: #fe4315;
+}
+.book-reserve a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.book-reserve:hover {
+    border: 2px solid #fe4315;
+    background-color: white;
+}
+.book-reserve:hover a{
+    color:  #fe4315;
+}
+.book-reserve a:hover {
+    font-size: 20px;
+    color:  #fe4315;
+    text-decoration: none;
+}
+.reserve-card {
+    background-color: white;
+    display: flex;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reserve-card .book-title {
+    text-align: center;
+    color: black;
+}
+.reserve-date {
+    border: 2px solid black;
+}
