@@ -12,17 +12,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body class="main">
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/logo/logo-header.png" width="auto" height="50" class="d-inline-block align-top img-fluid" alt="">
-        </a>
-    
-        <button class="navbar-toggler" type="button" onclick="openNav()">
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-        </button>
-    </nav>
+      <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/logo/logo-header.png" width="auto" height="50" class="d-inline-block align-top img-fluid" alt="">
+          </a>
+  
+  
+          <div class="collapse navbar-collapse books" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Carti <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Reviste</a>
+                  </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#">Ziare</a>
+                  </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#">Documente</a>
+                  </li>
+                 
+              </ul>
+          </div>
+          <button class="menu-btn" type="button" onclick="openNav()">
+              <div class="menu-bar"></div>
+              <div class="menu-bar"></div>
+              <div class="menu-bar"></div>
+          </button>
+      </nav>
+     
     <div id="SidenavRight" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="text-uppercase" href="#">prima pagină</a>
@@ -68,98 +87,110 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5 offset-md-1">
                     <div class=" card-input">
                         <div class="py-2">
                             Nume
                         </div>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Numele dvs." aria-label="last_name" aria-describedby="basic-addon1">
+                            <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class=" card-input">
+                <div class="col-md-5 offset-md-1">
+                    <div class="card-input">
                         <div class="py-2">
                             Prenume
                         </div>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Prenumele dvs." aria-label="first_name" aria-describedby="basic-addon1">
+                            <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class=" card-input">
+                <div class="col-md-5 offset-md-1">
+                    <div class=" card-input mx-auto">
                         <div class="py-2">
                             Email
                         </div>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="ex: abcde@example.com" aria-label="email" aria-describedby="basic-addon1">
+                            <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 offset-md-1">
                     <div class=" card-input">
                         <div class="py-2">
                             Telefon
                         </div>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="ex: 0712345678" aria-label="name" aria-describedby="basic-addon1">
+                            <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="d-flex justify-content-center p-3">
-            <div class="save">
-                Salveaza
-            </div>
+        <div class="d-flex justify-content-center p-3 mt-4">
+            <a class="save" href="#">
+                Salvează
+            </a>
         </div>
+        
+        <hr class="accout-hr">
         
         <div class="my-data p-5">
-            Schimba parola
+            Schimbă parola
         </div>
-        <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class=" card-input">
-                        <div class="py-2">
-                            Parola veche
+                <div class="col-md-10 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class=" card-input">
+                                <div class="py-2">
+                                    Parola veche
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="*******" aria-label="old_password" aria-describedby="basic-addon1">
+                                    <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input type="password" class="form-control" placeholder="*******" aria-label="old_password" aria-describedby="basic-addon1">
+                        <div class="col-md-4">
+                            <div class=" card-input">
+                                <div class="py-2">
+                                    Parola noua
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="*******" aria-label="new_password" aria-describedby="basic-addon1">
+                                    <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class=" card-input">
+                                <div class="py-2">
+                                    Reintrodu parola noua
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="*******" aria-label="new_password" aria-describedby="basic-addon1">
+                                    <img class="mx-3 align-self-center" src="./assets/logo/pencil.png" alt="" height="25">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class=" card-input">
-                        <div class="py-2">
-                            Parola noua
-                        </div>
-                        <div class="input-group">
-                            <input type="password" class="form-control" placeholder="*******" aria-label="new_password" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class=" card-input">
-                        <div class="py-2">
-                            Reintrodu parola noua
-                        </div>
-                        <div class="input-group">
-                            <input type="password" class="form-control" placeholder="*******" aria-label="new_password" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                </div>
+            
                 
             </div>
-        </div>
-        
-        <div class="d-flex justify-content-center p-3">
-            <div class="save">
-                Salveaza
-            </div>
+            
+        <div class="d-flex justify-content-center p-3 mt-4">
+            <a class="save" href="#">
+                Salvează
+            </a>
         </div>
     </div>
     <!-- script for right menu side bar -->
