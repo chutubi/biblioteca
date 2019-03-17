@@ -1,23 +1,23 @@
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
@@ -41,13 +41,14 @@
     width: fit-content;
     border: 2px solid #fe4315;
 }
+
 .sidenav .donate {
     margin: 5px;
     font-size: 24px;
     color: black;
     padding: 10px;
     width: fit-content;
-    border: 2px solid  #fe4315;
+    border: 2px solid #fe4315;
 }
 
 .search-div {
@@ -59,53 +60,91 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .search-div .title {
     color: white;
     font-size: 40px;
     padding: 5px 30px;
 }
+
 .search-div .custom-select {
     width: fit-content;
     background-color: black;
     color: white;
 }
 
+nav .books a {
+    color: #fff;
+}
+
+nav .books a:hover {
+    color: #fe4315;
+}
+
+nav .books a:focus,
+nav .books a:active,
+    {
+    color: #fe4315;
+}
+
+.menu-btn {
+    background: #000;
+    border: none;
+}
+
+.menu-btn:focus {
+    outline: none!important;
+
+}
+.btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
 /* book card style */
 .book-cover {}
+
 .book-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .book-title {
     font-size: 16px;
     color: #d3d3d3;
 }
+
 .book-author {
     font-size: 14px;
     color: #9c9c9c;
 }
+
 .book-pages {
     font-size: 14px;
     color: #9c9c9c;
 }
+
 .book-publishing-house a {
     font-size: 14px;
-    color:  #fe4315;
+    color: #fe4315;
 }
+
 .book-publishing-house a:hover {
-    color:  #fe4315;
+    color: #fe4315;
 }
+
 .book-decsription {
     font-size: 14px;
     color: #9c9c9c;
 }
+
 .book-reserve {
     padding: 5px;
     text-align: center;
     background-color: #fe4315;
     border: none;
 }
+
 .reserve-card {
     background-color: white;
     display: flex;
@@ -114,10 +153,21 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .reserve-card .book-title {
     text-align: center;
     color: black;
 }
+
 .reserve-date {
     border: none;
+}
+
+.select-book {
+    width: 200px;
+    position: relative;
+    padding-top: 15px;
+}
+.dropdown-toggle::after {
+    color: #fff;
 }
