@@ -104,23 +104,7 @@
     padding: 5px;
     text-align: center;
     background-color: #fe4315;
-}
-.book-reserve a {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-.book-reserve:hover {
-    border: 2px solid #fe4315;
-    background-color: white;
-}
-.book-reserve:hover a{
-    color:  #fe4315;
-}
-.book-reserve a:hover {
-    font-size: 20px;
-    color:  #fe4315;
-    text-decoration: none;
+    border: none;
 }
 .reserve-card {
     background-color: white;
@@ -135,5 +119,5 @@
     color: black;
 }
 .reserve-date {
-    border: 2px solid black;
+    border: none;
 }
