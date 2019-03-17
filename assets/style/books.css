@@ -108,13 +108,12 @@ nav .books a:active,
 }
 
 .menu-btn {
-    background: #000;
+    background: transparent;
     border: none;
 }
 
 .menu-btn:focus {
     outline: none !important;
-
 }
 
 .btn:focus {

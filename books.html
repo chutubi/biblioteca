@@ -27,7 +27,7 @@
         </a>
 
 
-        <div class="collapse navbar-collapse books" id="navbarTogglerDemo02"> 
+        <div class="collapse navbar-collapse books" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Carti <span class="sr-only">(current)</span></a>
@@ -106,8 +106,8 @@
 
     </div>
     <div class="container-fluid">
-        <div class="book-list row p-3">
-            <div class="col-md-3 ">
+        <div class="book-list row flex-wrap p-3">
+            <div class="col-md-3">
                 <div class="book-card row" id="book-card">
                     <div class="col-6 book-cover">
                         <img class="" src="./assets/logo/coperta-carte.png" alt="" height="300px" width="180px">
@@ -189,6 +189,49 @@
 
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="book-card row" id="book-card">
+                    <div class="col-6 book-cover">
+                        <img class="" src="./assets/logo/coperta-carte.png" alt="" height="300px" width="180px">
+                    </div>
+                    <div class="col-6 book-info">
+                        <div class="book-title">
+                            Arhitectul G.M. Cantacuzino în dosarele Securității
+                        </div>
+                        <div class="book-author">
+                            Vlad Mitric-Ciupe
+                        </div>
+                        <div class="book-pages">
+                            480 pagini
+                        </div>
+                        <div class="book-publishing-house">
+                            <a href="#">Humanitas</a>
+                        </div>
+                        <div class="book-decsription">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                        </div>
+
+                        <button class="book-reserve" type="button" name="button" onclick="reserveBook()">
+                            Rezervă
+                        </button>
+                    </div>
+                </div>
+                <div class="reserve-card d-none" id="reserve-card">
+                    <div class="book-title my-3">
+                        Arhitectul G.M. Cantacuzino în dosarele Securității
+                    </div>
+                    <div class="reserve-date px-5 py-1">
+                        Selectează data
+                        <input class="" id="datepicker" width="100" />
+                        <script>
+                            $('#datepicker').datepicker();
+                            </script>
+                    </div>
+                    <button class="book-reserve" type="button" name="button" style="padding: 5px 50px;">
+                        Rezervă
+                    </button>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -209,6 +252,8 @@
         function reserveBook() {
             var abc = document.getElementById("book-card");
             abc.classList.add('d-none')
+            var abc2 = document.getElementById("reserve-card");
+            abc2.classList.remove('d-none')
             console.log("lkfdslkfdskdsfs");
         }
 
