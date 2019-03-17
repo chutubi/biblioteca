@@ -9,15 +9,35 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    text-align: center;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 8px 15px 32px;;
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
     transition: 0.3s;
+}
+
+.sidenav a.line::after {
+    content: "|";
+    width: 0px;
+    color: #000;
+    font-size: 18px;
+    bottom: 0px;
+    bottom: -15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: table;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.sidenav a.line {
+    position: relative;
 }
 
 .sidenav a:hover {
@@ -93,13 +113,15 @@ nav .books a:active,
 }
 
 .menu-btn:focus {
-    outline: none!important;
+    outline: none !important;
 
 }
-.btn:focus{
-    outline: none!important;
-    box-shadow: none!important;
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
+
 /* book card style */
 .book-cover {}
 
@@ -168,6 +190,7 @@ nav .books a:active,
     position: relative;
     padding-top: 15px;
 }
+
 .dropdown-toggle::after {
     color: #fff;
 }
